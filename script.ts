@@ -39,7 +39,7 @@ function NewEmailVacationGrant(
         mappedPayroll[payroll[i].empNo] = Object.assign({}, payroll[i]);
     }
 
-    for(var i:number = 0; i < histories.length; i++) {
+    for (var i:number = 0; i < histories.length; i++) {
         var employee:WorkHistory = histories[i];
         var address:AddressBook = mappedAddresses[employee.empNo];
 
@@ -59,7 +59,7 @@ function OldEmailVacationGrant(
     addresses: AddressBook[],
     payroll: Payroll[]
 ) {
-    for(var i:number = 0; i < histories.length; i++) {
+    for (var i:number = 0; i < histories.length; i++) {
         let employee = histories[i];
         let address = addresses.find(x => x.empNo==employee.empNo);
         let employeePayroll = payroll.find(x => x.empNo==employee.empNo);
