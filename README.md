@@ -45,3 +45,9 @@ Please consider the following typescript:
       }
     }
 
+Results
+=====
+
+Each implementation was ran 50 times with 10,000 records; average runtime numbers were:
+
+![Results](results.png)
